@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+</head>
+<style>
+    #number_dis{
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        padding: 25px;
+        align-items: center;
+        
+    }
+    .number
+    {
+        padding: 23px;
+        background-color: white;
+        color: black;
+        font-size: 35px;
+       margin: 5px;
+        border-radius:10px ;
+        
+
+    }
+    .number:hover{
+        box-shadow: 3px 10px 10px 8px white;
+        background-color: black;
+        color:white;
+        font-size: 43px;
+    }
+    .max-width{
+        max-width: 25vw;
+        margin: auto;
+        
+    }
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,600&family=Roboto:wght@300&display=swap');
+    #display{
+        width: 300px;
+        height: 100px;
+        background-color: green;
+        font-size: 30px;
+        font-weight:bold;
+        font-family: 'Poppins';
+        
+    }
+    
+</style>
+<body>
+   
+    <div id="number_dis" margin="auto" class="max-width">
+        <div>
+        <input type="text" id="display" name="display" placeholder="calcuate me!!"/></div>
+        <div style="background-color: white;"></div>
+        <div >
+        <button  class="number" id="1">1</button>
+        <button id="2" class="number">2</button>
+        <button id="3"class="number">3</button>
+        <button id="+"class="number">+</button>
+
+        </div>
+        <div>
+            <button id="4"class="number">4</button>
+            <button id="5" class="number">5</button>
+             <button id="6" class="number">6</button>
+             <button id="*"class="number">*</button>
+        
+        </div>
+        <div>
+            <button id="7" class="number">7</button>
+            <button id="8" class="number">8</button>
+             <button id="9" class="number">9</button>
+             <button id="/"class="number">/</button>
+        </div>
+        <div>
+            <button id="0" class="number">0</button>
+            <button id="." class="number">.</button>
+             <button id="c" class="number">C</button>
+             <button id="-"class="number">-</button>
+        </div>
+        <div>
+            <button id="=" class="number">=</button>
+            <button id="%" class="number">%</button>
+        </div>
+    </div>
+
+    
+    <script>
+        let string=" ";
+let buttons=document.getElementsByTagName('button');
+Array.from(buttons).forEach((item)=>{
+    item.addEventListener("click",(e)=>{
+        console.log(e.target)
+        if(e.target.innerHTML=="=")
+        {string=eval(string)    
+        document.getElementById("display").value=string
+        }
+        else if(e.target.innerHTML=="C")
+        {
+            string=" "
+            document.getElementById("display").value=string
+        }
+        else{
+            string=string+e.target.innerHTML
+            document.getElementById("display").value=string
+        }
+    })
+})
+    </script>
+</body>
+</html>
