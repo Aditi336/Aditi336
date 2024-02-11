@@ -238,6 +238,22 @@ void Department::delete_item() {
 int main() {
     Department d;
     int choice;
+    std::cout << "\t\t\t###########################################################################" << std::endl;
+    std::cout << "\n\t\t\t############                                                   ############" << std::endl;
+    std::cout << "\n\t\t\t############         STORE DEPARTMENT MANAGEMENT               ############" << std::endl;
+    std::cout << "\n\t\t\t############                                                   ############" << std::endl;
+    std::cout << "\n\t\t\t###########################################################################" << std::endl;
+    std::cout << "\n\t\t\t---------------------------------------------------------------------------" << std::endl;
+    std::cout << "\n\n\n\n\n";
+    std::cout << "\n\t\t\t                     ------------------\n";
+    std::cout << "\n\t\t\t        =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=" << std::endl;
+    std::cout << "\n\t\t\t        =                  WELCOME                  =" << std::endl;
+    std::cout << "\n\t\t\t        =                  TO THE                   =" << std::endl;
+    std::cout << "\n\t\t\t        =                 FRESH FARE                =" << std::endl;
+    std::cout << "\n\t\t\t        =                   MARKET                  =" << std::endl;
+    std::cout << "\n\t\t\t        =                                           =" << std::endl;
+    std::cout << "\n\t\t\t        =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=" << std::endl;
+    std::cout << "\n\t\t\t                     ------------------\n";
 
     do {
         d.control_panel();
