@@ -1,6 +1,6 @@
 - 👋 Hi, I’m @Aditi336
 - 👀 I’m interested in Web Development
-- 🌱 I’m currently learning react.js
+- 🌱 I’m currently learning fastapi
 - 💞️ I’m looking to collaborate on ...
 - 📫 How to reach me 
 
